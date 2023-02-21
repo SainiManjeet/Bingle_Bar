@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:id="@+id/lin_main2"
+    android:layout_height="match_parent">
+
+
+            <!--  android:layout_width="match_parent" android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:weightSum="3">
+       <!-- <TextView
+            android:id="@+id/cancel_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/ten_sp"
+            android:text="Cancel"
+            android:textColor="@color/colorBlue"
+            android:textSize="20dp"
+        />-->
+
+        <ImageView android:id="@+id/cancel_id"
+                   android:layout_width="0dp"
+                   android:layout_height="16dp"
+                   android:src="@drawable/down_arr"
+                   android:layout_weight="1"
+                   android:paddingLeft="@dimen/ten_sp"
+                   android:layout_gravity="center|left"
+
+
+        />
+        <TextView
+            android:id="@+id/rate_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Rate Us"
+            android:textColor="@color/colorBlack"
+            android:textSize="23dp"
+        />
+        <TextView
+            android:id="@+id/send_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Send"
+            android:textColor="@color/colorBlue"
+            android:textSize="20dp"
+        />
+    </LinearLayout>
+            <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorBlue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/user2"
+            app:civ_border_color="#AAA"
+            app:civ_border_width="1dp"/>
+
+
+        <TextView
+            android:id="@+id/rate_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="Sandeep"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+        />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorBlue"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:id="@+id/rating"
+        android:width="1dp"
+        android:color="@color/colorBlue"
+        android:stepSize="1"
+        android:layout_marginTop="15dp"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:numStars="5"/>
+
+
+    <TextView
+        android:id="@+id/rating_name_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tap a Star to Rate"
+        android:textColor="#AAA"
+        android:textSize="13dp"
+    />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="#AAA"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="Title (Optional)"
+            android:id="@+id/title_id"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="10dp"/>
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#AAA"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Review (Optional)"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/review_name_id"/>
+
+</LinearLayout>

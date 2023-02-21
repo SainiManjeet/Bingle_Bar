@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Bingle</string>
+
+    <string name="facebook_app_id">296611000875957</string>
+    <string name="fb_login_protocol_scheme">fb296611000875957</string>
+
+    <string name="loading">loading</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="pick_place">Choose a place</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+   <!-- <integer name="google_play_services_version">11200000</integer>-->
+    <integer name="google_play_services_version">11910000</integer>
+
+    <string name="submit">Submit</string>
+    <string name="ok">Ok</string>
+<!--    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAA8xRsMvX7NUd19h6F0tJ28T4A4IxGjVY </string>-->
+
+    <string name="thank_u">Thank you for registering with Bingle</string>
+    <string name="change">Change</string>
+    <string name="search_for">Search for Restaurant or Bar</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+
+    <string name="all_review">All Reviews</string>
+
+    <string name="review">Reviews:</string>
+
+</resources>

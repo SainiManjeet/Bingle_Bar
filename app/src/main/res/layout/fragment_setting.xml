@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+   <LinearLayout android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       xmlns:android="http://schemas.android.com/apk/res/android">
+      <include layout="@layout/toolbar_file"></include>
+
+      <android.support.v4.widget.DrawerLayout
+          android:layout_height="match_parent"
+          android:layout_width="match_parent"
+          android:id="@+id/drawerlayout_id"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+         <LinearLayout android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="#fff"
+             android:orientation="vertical"
+             xmlns:android="http://schemas.android.com/apk/res/android" >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_height="96dp"
+                android:src="@android:drawable/ic_menu_camera"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#000"/>
+
+         </LinearLayout>
+
+         <fragment
+             class="com.bingle.ameba.bingle_bar.fragments.Nav_Fragment"
+             android:layout_width="280dp"
+             android:layout_height="match_parent"
+             android:id="@+id/frag"
+             android:layout="@layout/nav_fragment"
+             android:layout_gravity="left">
+         </fragment>
+      </android.support.v4.widget.DrawerLayout>
+   </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

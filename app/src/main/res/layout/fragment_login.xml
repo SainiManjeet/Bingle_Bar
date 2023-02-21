@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:background="@drawable/bg_splash"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+   <ImageView
+        android:layout_marginTop="105dp"
+        android:id="@+id/bingo"
+        android:layout_width="@dimen/sixty_dp"
+        android:layout_height="@dimen/sixty_dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bingle_ic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="180dp"
+        android:background="#7F000000"
+        android:orientation="vertical">
+
+     <com.facebook.login.widget.LoginButton
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/login_fb_id"
+            android:visibility="gone" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="0dp"
+                android:id="@+id/fb_button_id"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_weight="0.7"
+                android:background="@drawable/fb11"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:textStyle="bold"
+                android:id="@+id/btn_google"
+                android:layout_width="250dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/g1"
+            android:textColor="@color/colorWhite"/>
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000"
+            android:id="@+id/Sign_up_id"
+            android:layout_margin="20dp"
+            android:text="Don't have an account yet? Sign up" />
+    </LinearLayout>
+</LinearLayout>

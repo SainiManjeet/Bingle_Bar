@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:id="@+id/lin_main2"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/drawerlayout_id">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5.3"
+            android:orientation="vertical">
+            <include layout="@layout/toolbar_file"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Feedback"
+                android:layout_weight="0.3"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/send_feedback_id"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#AAA"
+                android:layout_weight="0.5"
+                android:text="Tell us what you love about the app, or what we could be doing better"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/send_feedback_content"
+                android:textSize="18dp"/>
+
+
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/twenty_sp"
+                android:layout_marginRight="@dimen/twenty_sp"
+                android:layout_weight="1"
+                android:background="@drawable/feedback_background"
+                android:orientation="vertical"
+                >
+
+                <EditText
+
+                    android:id="@+id/edt_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="top"
+                    android:hint="Enter Feedback"
+                    android:minHeight="70dp"
+
+                    android:padding="@dimen/five_dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/fourteen_sp"
+                   />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/send_feedback_content2"
+                android:layout_height="wrap_content"
+                android:text="If you have more detailed feedback to share,good and bad,we want it all.Just drop in an email to"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/send_feedback_content3"
+                android:layout_height="wrap_content"
+                android:text="contact@bingleinc.com"
+                android:textColor="#EE0000"
+
+            />
+
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="160dp"
+                android:text="Submit"
+                android:textColor="#a9a9a9"
+
+                android:textSize="25dp"
+                android:layout_weight="2"
+                android:textAllCaps="false"
+                android:id="@+id/Submit"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/feedback_submit"/>
+
+        </LinearLayout>
+
+        <fragment class="com.bingle.ameba.bingle_bar.fragments.Nav_Fragment"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:id="@+id/frag"
+            android:layout="@layout/nav_fragment"
+            android:layout_gravity="left"></fragment>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

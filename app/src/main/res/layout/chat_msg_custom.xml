@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout android:id="@+id/lin_yellow"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="end"
+                  android:layout_marginLeft="80dp"
+                  android:layout_marginTop="5dp"
+                  android:background="@drawable/c1"
+                  android:orientation="horizontal"
+                  android:weightSum="1"
+
+    >
+
+        <TextView android:id="@+id/txt_yellow"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.8"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_marginBottom="3dp"
+                  android:layout_marginRight="2dp"
+                  android:layout_marginTop="3dp"
+                  android:paddingBottom="@dimen/five_dp"
+                  android:paddingLeft="@dimen/ten_sp"
+                  android:paddingRight="6dp"
+                  android:paddingTop="@dimen/five_dp"
+                  android:text="This i isto be chdkjfhkjdhfkhdfkhkdsjhfjdhdkjhfkhdkhfkdhfjdhfkjdhkfjdhknxbcnxbcnxbcnxbcnxcbxmncbxmncbmxncbxmcnxecked."
+                  android:textColor="@color/colorBlack"/>
+
+
+        <TextView
+            android:id="@+id/txt_time_other"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="2sp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="@dimen/five_dp"
+            android:paddingLeft="@dimen/ten_sp"
+            android:paddingRight="@dimen/fifteen_dp"
+            android:paddingTop="@dimen/five_dp"
+            android:text="8:30 PM"
+            android:textColor="@color/colorBlack"
+            android:textSize="9sp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/lin_white"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="80dp"
+                  android:layout_marginTop="10dp"
+                  android:background="@drawable/c2"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+        <TextView android:id="@+id/txt_white"
+                  android:layout_width="0dp"
+                  android:layout_weight="0.8"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:layout_marginBottom="3dp"
+                  android:layout_marginLeft="@dimen/ten_sp"
+                  android:layout_marginTop="3dp"
+                  android:paddingBottom="@dimen/five_dp"
+                  android:paddingLeft="12dp"
+                  android:paddingRight="2dp"
+                  android:paddingTop="@dimen/five_dp"
+                  android:text="message tddddsdsdsdsdssdsdsdsdsdsdsd ssdsd sdsdshgjgjsd sjdsdgshgd jgsjdgshis is is isiiuoisoioioiodifoidfoidofido"
+                  android:textColor="@color/colorBlack"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_time_mine"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="2sp"
+            android:layout_marginTop="6dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10sp"
+            android:paddingRight="@dimen/ten_sp"
+            android:paddingTop="@dimen/five_dp"
+            android:text="10:00 PM"
+            android:textColor="@color/colorBlack"
+            android:textSize="9sp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

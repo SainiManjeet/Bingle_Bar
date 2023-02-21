@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/lin_main"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerlayout_id2"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+            <include layout="@layout/toolbar_file"></include>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="#dfdfdf"></View>
+            <include layout="@layout/current_location"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="8dp"
+                          android:layout_marginRight="8dp"
+                          android:background="@drawable/btn_gray"
+                          android:orientation="vertical"
+            >
+
+                <EditText
+                    android:id="@+id/edit_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="0.6"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@drawable/search"
+                    android:drawablePadding="10sp"
+                    android:hint="@string/search_for"
+                    android:singleLine="true"
+                    android:textColor="@color/colorTextGray"
+                    android:textSize="@dimen/sixteen_sp"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/my_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:background="@color/colorGrayBorder"
+                android:scrollbars="vertical"/>
+
+            <TextView android:id="@+id/txt_no_data"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:text="No Result Found!"
+                      android:visibility="gone"/>
+
+        </LinearLayout>
+
+
+        <fragment
+            android:id="@+id/frag"
+            class="com.bingle.ameba.bingle_bar.fragments.Nav_Fragment"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout="@layout/nav_fragment">
+        </fragment>
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

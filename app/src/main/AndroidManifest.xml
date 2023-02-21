@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bingle.ameba.bingle_bar">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permissions to receive and read SMS -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+     location_stion permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Just try might need to remove-->
+    <!--android:roundIcon="@mipmap/ic_launcher_round"-->
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <!--    android:hardwareAccelerated="true"-->
+
+   <!-- android:allowBackup="true"-->
+  <!--  android:supportsRtl="true"-->
+    <application
+        android:name="com.bingle.ameba.bingle_bar.common_functions.CommonMethods"
+        android:allowBackup="false"
+        tools:replace="android:allowBackup"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/app_ic"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/app_ic"
+
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/FullyTranslucent"
+            tools:replace="android:theme" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.bingle.ameba.bingle_bar.activities.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.bingle.ameba.bingle_bar.activities.MainActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+        <!--android:hardwareAccelerated="true"-->
+
+        <activity
+            android:name="com.bingle.ameba.bingle_bar.activities.MapsActivityCurrentPlace"
+            android:screenOrientation="portrait" />
+
+
+
+        <activity
+            android:name=".activities.SimpleTabsActivity"
+            android:label="TNDC (BINGLE BAR)"
+            android:screenOrientation="portrait" />
+
+
+
+
+
+        <activity
+            android:name="chat.Chat"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.ReceiveOtoActivity"
+
+            android:hardwareAccelerated="false"
+            android:largeHeap="true"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="chat_module.ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />-
+
+
+        <!-- Declare SMS Broadcast receiver -->
+        <receiver android:name="com.bingle.ameba.bingle_bar.receivers.SMSBReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.bingle.ameba.bingle_bar.receivers.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+        <service
+            android:name=".common_functions.BackGroundService"
+            android:enabled="true"></service>
+
+        <!-- FCM push services-->
+
+        <service android:name=".common_functions.firebase_chat_managers.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".common_functions.firebase_chat_managers.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANSE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!--Service updlocation_stion -->
+      <!-- <service android:enabled="true" android:name=".common_functions.BackGroundService"/>-->
+
+
+
+    </application>
+
+</manifest>

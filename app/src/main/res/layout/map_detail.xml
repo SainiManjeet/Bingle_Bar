@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="3.5"
+           android:orientation="vertical">
+
+   <!-- <include layout="@layout/toolbar_file"/>-->
+
+    <include layout="@layout/chat_toolbar"/>
+    <LinearLayout
+        android:id="@+id/lin_layout_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.3"
+
+        android:orientation="vertical">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:map="http://schemas.android.com/apk/res-auto"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:id="@+id/map"
+                  android:name="com.google.android.gms.maps.SupportMapFragment"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  tools:context="com.bingle.ameba.bingle_bar.fragments.MapDetailFragment" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1.2"
+                  android:weightSum="3"
+                  android:background="@color/colorWhite"
+                  android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:weightSum="2.5"
+            android:layout_weight="1"
+                      android:layout_margin="5dp"
+                     >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_res"
+                android:layout_width="0dp"
+               android:layout_height="65dp"
+                android:src="@drawable/avtaar"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#AAA"
+                android:layout_weight="0.6"/>
+            <LinearLayout
+                android:layout_marginLeft="3dp"
+                android:layout_width="0dp"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="1.5"
+                          android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="The Next Door Cafe"
+                      android:textColor="@android:color/black"
+                      android:textStyle="bold"
+                      android:textSize="@dimen/eighteen_sp"
+                      android:id="@+id/res_name"
+            />
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Sec 71"
+                          android:id="@+id/address_id"
+                          android:textSize="@dimen/sixteen_sp"
+                />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_rating"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="30dp"
+                android:background="@drawable/btn_rating_green"
+                android:textColor="#fff"
+                android:text="3.5"
+                android:visibility="gone"
+                android:layout_margin="10dp"
+
+            />
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:weightSum="2"
+            android:layout_marginLeft="15dp">
+            <TextView
+                android:id="@+id/open_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+
+                android:text="Open now -"
+                android:textSize="@dimen/sixteen_sp"
+                android:textColor="@color/colorBlueText"/>
+
+            <TextView
+                android:id="@+id/open_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Open now  9 Am to 11 PM(Today)"
+                android:textSize="@dimen/sixteen_sp"
+                android:textColor="#AAA"
+            />
+        </LinearLayout>
+
+       <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="ADDRESS"
+           android:layout_weight="0.5"
+           android:textSize="14sp"
+          android:layout_marginLeft="25dp"
+       android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/txt_address_full"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textStyle="normal"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+            android:layout_marginLeft="15dp" />
+
+
+    </LinearLayout>
+</LinearLayout>

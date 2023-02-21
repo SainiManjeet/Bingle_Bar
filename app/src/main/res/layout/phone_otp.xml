@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_id"
+    android:background="#fff">-->
+
+<RelativeLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/phone_otp_design"
+                android:background="@drawable/phn_bg"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/img"
+        android:layout_gravity="center"
+        android:gravity="center"
+    >
+        <ImageView
+            android:layout_width="@dimen/sixty_dp"
+            android:layout_height="@dimen/sixty_dp"
+            android:layout_gravity="center"
+            android:background="@drawable/phone_otp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/img"
+
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:weightSum="1"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_flag"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                       android:layout_weight="0.2"
+                       android:scaleType="fitCenter"
+                       android:layout_gravity="left" />
+
+            <TextView
+                android:id="@+id/txt_country"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.8"
+                android:text=""
+                android:gravity="center|left"
+                android:textSize="20dp"
+                android:textStyle="bold"
+            />
+
+
+            <!-- <TextView android:visibility="visible"
+
+                       android:id="@+id/txt_country"
+                       android:layout_marginTop="15dp"
+                       android:layout_width="match_parent"
+                 android:layout_weight="0.5"
+                       android:layout_height="wrap_content"
+                       android:textSize="20dp"
+                 android:layout_marginLeft="20dp"
+
+                       android:text="India"
+                 android:paddingRight="20dp"
+                       android:drawableRight="@drawable/shape_arrow"
+                       android:textStyle="bold"/>-->
+
+            <!--  <LinearLayout android:layout_width="match_parent"
+                  android:layout_marginRight="19dp"
+                  android:layout_marginLeft="19dp"
+                  android:layout_weight="0.5"
+                  android:layout_height="1dp"
+
+                  android:background="@color/colorBlack"
+
+                  >
+
+
+          </LinearLayout>-->
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/phone_edtxt_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:maxLength="15"
+                android:hint="Your phone number"
+                android:inputType="number"
+                android:textSize="18dp"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/forward_icon"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_submit"
+            android:text="@string/submit"
+            android:textColor="#fff"
+            android:textSize="@dimen/eighteen_sp"
+        />
+
+    </LinearLayout>
+
+    </RelativeLayout>

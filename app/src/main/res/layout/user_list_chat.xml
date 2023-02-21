@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/tb_lay"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+
+
+>
+
+    <LinearLayout
+        android:id="@+id/tbl_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.8"
+            android:src="@drawable/com_facebook_profile_picture_blank_portrait"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"/>
+
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_weight="1.7"
+                      android:orientation="vertical"
+                      android:weightSum="2"
+        >
+            <TextView android:id="@+id/text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:maxLines="1"
+                      android:text="User"
+                      android:textColor="@android:color/black"
+                      android:textStyle="bold"/>
+
+            <TextView android:id="@+id/text2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight="1"
+                      android:maxLines="1"
+                      android:text="Status"
+                      android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <TextView android:id="@+id/text3"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:layout_weight="0.2"
+                  android:text=""/>
+
+
+        <TextView
+            android:id="@+id/txt_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:layout_weight="0.3"
+            android:text="⬤"
+            android:textColor="#00b2ff"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_empty"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="80dp"
+        android:background="#ccf0ff"></View>
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId 'com.bingle.ameba.bingle_bar'
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 7
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resValue "string", "google_maps_key", (project.findProperty("GOOGLE_MAPS_API_KEY") ?: "")
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            lintOptions {
+                disable 'MissingTranslation'
+                checkReleaseBuilds false
+                abortOnError false
+            }
+            minifyEnabled false
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    buildToolsVersion '27.0.3'
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // Android supprot Libraries
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    //Library for Facebook integration
+    implementation 'com.facebook.android:facebook-android-sdk:4.32.0'
+    //Library to load n show images
+    compile 'com.github.bumptech.glide:glide:3.8.0'
+    //Library for rounding image
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //Library for gson(Pojo classes)
+    implementation 'com.google.code.gson:gson:2.8.0'
+    //Library for Enter input(Used in Receive OTP Module)
+    implementation 'com.github.GoodieBag:Pinview:v1.3'
+    //Library to show shadow in xml layouts
+    implementation 'com.github.dmytrodanylyk.shadow-layout:library:1.0.1'
+    // Library to bind xml views
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //Google Play Services Library
+
+
+    implementation 'com.google.android.gms:play-services-auth:11.8.0'
+
+  /*  implementation 'com.google.android.gms:play-services-auth:16.0.1'*/
+    implementation 'com.google.android.gms:play-services:11.8.0'
+
+
+
+    //Recycler View Library(To show data in list)
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    // Libraries For Retrofit (API calling)
+    compile 'io.reactivex.rxjava2:rxjava:2.0.3'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    // Volley Library(API calling)
+    compile 'com.android.volley:volley:1.1.0'
+    //Library for Firebase crashlytics
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.2'
+    //Library for Firebase
+    compile 'com.firebase:firebase-client-android:2.5.2'
+   /* implementation 'com.google.firebase:firebase-auth:16.0.1'*/
+
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
+
+
+    //Current Time Library
+    compile 'com.github.curioustechizen.android-ago:library:1.4.0'
+
+}
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric'
+

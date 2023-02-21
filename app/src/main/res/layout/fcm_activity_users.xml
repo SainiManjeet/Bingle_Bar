@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:background="@color/colorWhite"
+    android:orientation="vertical">
+    <android.support.v4.widget.DrawerLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/drawerlayout_id2"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/toolbar_file"></include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No users found!"
+        android:id="@+id/noUsersText"
+        android:visibility="gone"/>
+
+    <ListView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usersList"/>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

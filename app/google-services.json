@@ -1,0 +1,95 @@
+{
+  "project_info": {
+    "project_number": "858830205209",
+    "firebase_url": "https://bingle-app-60175.firebaseio.com",
+    "project_id": "bingle-app-60175",
+    "storage_bucket": "bingle-app-60175.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858830205209:android:f740ecafb396c853",
+        "android_client_info": {
+          "package_name": "com.bingle.ameba.bingle_bar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858830205209-pg12msvohucisjh264t16mlir1hns6to.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bingle.ameba.bingle_bar",
+            "certificate_hash": "d5e0f2af283a321a006e9ac762500f11d859b24a"
+          }
+        },
+        {
+          "client_id": "858830205209-jjhr9g50r47i3annplcagoc80p4ghss8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bingle.ameba.bingle_bar",
+            "certificate_hash": "298f1cb9441de02aff841cc679049eefa4dd926e"
+          }
+        },
+        {
+          "client_id": "858830205209-u9p78hot8k3ujkpnqaog4omfnqshjbp0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bingle.ameba.bingle_bar",
+            "certificate_hash": "04988509005ae41a74751acfdc7ca01f40cc25bf"
+          }
+        },
+        {
+          "client_id": "858830205209-q4obrs50ptm90h5mvcap21641ciebi23.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bingle.ameba.bingle_bar",
+            "certificate_hash": "723502c879b62945813cc7b73e4643b9a77dbdcb"
+          }
+        },
+        {
+          "client_id": "858830205209-oogucjvm0q2uq1765ifuuroe5j8ckilm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bingle.ameba.bingle_bar",
+            "certificate_hash": "8b6bf51a8b6c6987847417df37e00e134152605b"
+          }
+        },
+        {
+          "client_id": "858830205209-7kag4ni94i0s57r9nlg5123vcthtshar.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6vU5A2AwsjPfyN-elijNaHzXgegOeQuI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858830205209-gel48t4ra6bs4urlqbeu3lqlm39onpk3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bingle.BingleBarApp",
+                "app_store_id": "1385707943"
+              }
+            },
+            {
+              "client_id": "858830205209-7kag4ni94i0s57r9nlg5123vcthtshar.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

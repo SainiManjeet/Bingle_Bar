@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/border_simple_blue"
+android:orientation="vertical"
+>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Rate Us"
+              android:textSize="25sp"
+              android:textStyle="bold"
+              android:gravity="center"
+              android:layout_gravity="center|top"
+    />
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                android:weightSum="1"
+        android:layout_marginLeft="5dp"
+    >
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.5"
+                  android:text="Your Rating is :"
+                  android:textSize="@dimen/eighteen_sp"
+
+        />
+    <Button
+        android:id="@+id/btn_rating"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="40dp"
+        android:layout_margin="2dp"
+        android:background="@drawable/btn_rating_green"
+        android:textColor="#fff"
+        android:text=""
+    />
+
+
+        <TextView  android:layout_width="0dp"
+               android:layout_weight="0.3"
+               android:layout_height="40dp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/button_boader"
+                  android:minHeight="45dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginRight="5dp"
+    >
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/edt_comment"
+              android:hint="Enter your comment"
+              android:padding="3dp"
+              android:layout_marginTop="3dp"
+              android:layout_marginLeft="5dp"
+              android:textSize="@dimen/sixteen_sp"
+              android:background="@android:color/transparent"
+    />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_submit"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:textSize="@dimen/eighteen_sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+
+
+    />
+
+</LinearLayout>

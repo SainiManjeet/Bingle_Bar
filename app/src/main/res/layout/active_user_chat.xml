@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/tl_lay"
+>
+
+    <TableRow
+
+        android:id="@+id/tbl_row"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:weightSum="3">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:id="@+id/image"
+            android:layout_margin="10dp"
+            android:src="@drawable/com_facebook_profile_picture_blank_portrait"/>
+
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/text"
+                android:layout_margin="15dp"
+                android:layout_weight="1.5"
+                android:textStyle="bold"
+                android:text="User"/>
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:src="@drawable/right_chat"/>
+    </TableRow>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="80dp"
+        android:background="#00b2ff"></View>
+
+</TableLayout>

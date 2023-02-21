@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/my_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:singleLine="true"
+        android:text="Location"
+        android:textAllCaps="true"
+        android:textColor="@color/colorTextGray"
+        android:textSize="13sp"
+        android:textStyle="bold"
+
+    />
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="8dp"
+                  android:layout_marginRight="8dp"
+                  android:orientation="horizontal"
+                  android:paddingBottom="10dp"
+                  android:paddingTop="1dp"
+                  android:weightSum="2">
+
+       <!-- <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/loc"/>-->
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/bing"/>
+
+        <!--<TextView
+            android:id="@+id/txt_loc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.4"
+            android:drawablePadding="3dp"
+            android:maxLines="3"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+        />-->
+
+        <TextView
+            android:id="@+id/txt_loc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1.8"
+            android:drawablePadding="3dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="bold"
+        />
+
+        <TextView
+            android:id="@+id/txt_change_loc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0.2"
+            android:gravity="end"
+            android:minHeight="45dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="@string/change"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlueText"
+            android:textSize="@dimen/fifteen_sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+
+        />
+
+    </LinearLayout>
+</LinearLayout>

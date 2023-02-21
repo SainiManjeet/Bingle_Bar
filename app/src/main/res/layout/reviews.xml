@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout android:layout_height="match_parent"
+                  android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:background="@color/colorWhite"
+                  xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <include layout="@layout/toolbar_file"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="The Next Door Cafe"
+                  android:textSize="30dp"
+                  android:id="@+id/res_name"
+                  android:textColor="@color/colorBlack"
+                  android:layout_marginTop="15dp"
+                  android:layout_marginLeft="15dp"
+                  />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Sector 71,Mohali"
+                  android:textSize="20dp"
+                  android:id="@+id/sector_id"
+                  android:textColor="@color/mainGray"
+                  android:layout_marginLeft="15dp"/>
+
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="@string/all_review"
+                  android:textSize="25dp"
+                  android:id="@+id/all_reviews"
+                  android:textColor="@color/colorBlue"
+                  android:layout_marginLeft="38dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/colorGrayBorder"
+            android:layout_marginTop="9dp"
+            android:id="@+id/recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+
+    </LinearLayout>

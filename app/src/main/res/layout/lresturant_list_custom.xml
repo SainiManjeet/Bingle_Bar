@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@drawable/border"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+             android:layout_margin="1dp"
+
+
+>
+
+    <ImageView
+android:padding="2dp"
+        android:id="@+id/img"
+        android:layout_width="68dp"
+android:layout_height="68dp"
+        android:scaleType="fitXY"
+    android:src="@drawable/res_two"/>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+    >
+<TextView
+    android:paddingLeft="3dp"
+    android:textColor="#000"
+    android:id="@+id/txt_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Name"
+    android:layout_marginTop="5dp"
+    android:textStyle="bold"
+/>
+
+        <TextView
+            android:paddingLeft="3dp"
+            android:textColor="#000"
+            android:id="@+id/txt_location"
+            android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textStyle="bold"
+                  android:text="Location"/>
+
+
+        //contact
+        <TextView
+            android:paddingLeft="3dp"
+            android:textColor="#000"
+            android:id="@+id/txt_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Contact:1234567890"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_gravity="right"
+                  android:gravity="right"
+    >
+        <RatingBar
+            android:numStars="5"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_gravity="right"
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

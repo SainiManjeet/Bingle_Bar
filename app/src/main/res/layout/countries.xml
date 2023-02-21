@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="45dp"
+              android:orientation="vertical"
+              android:id="@+id/lin"
+android:background="#fff">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+    android:orientation="horizontal"
+                  android:layout_marginTop="5dp"
+    >
+    <ImageView
+           android:id="@+id/img_flag"
+           android:layout_width="0dp"
+           android:layout_weight="0.1"
+           android:layout_height="22dp"
+           android:scaleType="fitXY"
+           android:src="@drawable/in"
+           android:paddingLeft="5dp"
+           android:visibility="gone"
+       />
+        <TextView android:layout_width="match_parent"
+
+                  android:layout_height="match_parent"
+                   android:text="Country"
+                  android:paddingLeft="10dp"
+                  android:textSize="16sp"
+                  android:textColor="#000"
+                 android:layout_gravity="center"
+                  android:id="@+id/txt_country"
+                  android:minWidth="250dp"
+        />
+
+
+
+    </LinearLayout>
+
+   <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@color/colorTextGray"
+                  android:layout_marginTop="7dp"
+    />
+
+
+</LinearLayout>
